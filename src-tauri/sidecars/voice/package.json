@@ -1,0 +1,14 @@
+{
+  "name": "botcord-voice",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js-selfbot-v13": "^3.5.2",
+    "@discordjs/voice": "^0.18.0",
+    "libsodium-wrappers": "^0.7.15",
+    "undici": "^6.20.1",
+    "socks-proxy-agent": "^8.0.4"
+  }
+}

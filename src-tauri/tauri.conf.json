@@ -1,0 +1,55 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "botcord",
+  "version": "0.1.0",
+  "identifier": "app.botcord",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "beforeBuildCommand": "pnpm build",
+    "devUrl": "http://127.0.0.1:5173",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "botcord",
+        "width": 1280,
+        "height": 820,
+        "minWidth": 1100,
+        "minHeight": 700,
+        "decorations": false,
+        "resizable": true,
+        "transparent": false,
+        "shadow": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' data: https://cdn.discordapp.com; connect-src 'self' ipc: http://ipc.localhost ws: wss:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; script-src 'self' 'wasm-unsafe-eval'"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.ico"
+    ],
+    "publisher": "botcord",
+    "category": "DeveloperTool",
+    "shortDescription": "local discord account toolkit",
+    "longDescription": "local discord account toolkit: token checks, proxies, voice presence, isolated browser sessions.",
+    "resources": [
+      "resources/chromium/*",
+      "resources/chromium/**/*",
+      "resources/extensions/*",
+      "resources/extensions/**/*",
+      "sidecars/voice/index.js",
+      "sidecars/voice/package.json",
+      "sidecars/voice/node_modules/*",
+      "sidecars/voice/node_modules/**/*"
+    ]
+  },
+  "plugins": {}
+}
