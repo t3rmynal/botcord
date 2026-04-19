@@ -1,0 +1,13 @@
+{
+  "name": "botcord-voice",
+  "version": "0.3.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "index.js",
+  "dependencies": {
+    "ws": "^8.18.0",
+    "undici": "^6.20.1",
+    "https-proxy-agent": "^7.0.6",
+    "socks-proxy-agent": "^8.0.4"
+  }
+}
