@@ -4,7 +4,7 @@
 
 # botcord
 
-A desktop automation toolkit for managing multiple Discord accounts. Runs entirely on your machine, no servers, no cloud, no middleman.
+A desktop automation toolkit for managing Discord accounts. Runs entirely on your machine, no servers, no cloud, no middleman.
 
 Built with [Tauri](https://tauri.app) (Rust backend) and a React + TypeScript frontend. Tokens are stored AES-encrypted in a local SQLite database, locked behind a master password with en- and decryption.
 
@@ -23,6 +23,7 @@ Built with [Tauri](https://tauri.app) (Rust backend) and a React + TypeScript fr
 - **Account registration** - register accounts, handles captcha via an embedded Chromium session (in the future will be added API for captcha solver)
 - **Friend requests flooder** - bulk-send friend request to username
 - **Profile editing** - change username, avatar, or other profile fields on selected accounts
+- **Nitro Checker** - checks if selected tokens have nitro subscription
 - **Isolated browser sessions** - each account gets its own Chromium profile (autologin)
 
 ---
