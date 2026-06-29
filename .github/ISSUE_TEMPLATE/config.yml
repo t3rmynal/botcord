@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: documentation
+    url: https://github.com/t3rmynal/botcord#readme
+    about: read the readme first
