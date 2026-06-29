@@ -5,25 +5,23 @@ dist-portable/
 .eslintcache
 .claude/
 
-# ts incremental
+# ts
 tsconfig.tsbuildinfo
 *.tsbuildinfo
 
-# rust build
+# rust
 src-tauri/target/
 src-tauri/gen/schemas/
 
-# auto-fetched resources (keep only the readme placeholders)
 src-tauri/resources/chromium/**
 !src-tauri/resources/chromium/README.md
 src-tauri/resources/extensions/**
 !src-tauri/resources/extensions/README.md
 
-# generated mobile icon sets (keep only main icons)
 src-tauri/icons/android/
 src-tauri/icons/ios/
 
-# local state, os junk
+
 .DS_Store
 Thumbs.db
 *.local
