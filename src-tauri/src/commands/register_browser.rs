@@ -207,7 +207,7 @@ fn write_autofill_extension(
         args.display_name
             .as_deref()
             .filter(|s| !s.is_empty())
-            .unwrap_or("1337"),
+            .unwrap_or(&args.username),
     );
 
     let content = format!(

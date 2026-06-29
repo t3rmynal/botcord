@@ -20,7 +20,7 @@ export function RegisterModal({ open, onClose }: { open: boolean; onClose: () =>
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [username, setUsername] = useState('')
-  const [displayName, setDisplayName] = useState('1337')
+  const [displayName, setDisplayName] = useState('')
   const [dob, setDob] = useState('')
   const [useProxy, setUseProxy] = useState(true)
   const [useDomain, setUseDomain] = useState(false)
@@ -83,7 +83,7 @@ export function RegisterModal({ open, onClose }: { open: boolean; onClose: () =>
         password,
         username,
         date_of_birth: dob,
-        display_name: displayName.trim() || '1337',
+        display_name: displayName.trim() || username.trim(),
         use_proxy: useProxy,
       })
       setResult({ ok: true, msg: 'chromium opened. register, copy token from devtools, paste below.' })

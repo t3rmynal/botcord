@@ -4,9 +4,9 @@
 
 # botcord
 
-A local desktop toolkit for managing multiple Discord accounts. Runs entirely on your machine, no servers, no cloud, no middleman.
+A desktop automation toolkit for managing multiple Discord accounts. Runs entirely on your machine, no servers, no cloud, no middleman.
 
-Built with [Tauri](https://tauri.app) (Rust backend) and a React + TypeScript frontend. Tokens are stored AES-encrypted in a local SQLite database, locked behind a master password.
+Built with [Tauri](https://tauri.app) (Rust backend) and a React + TypeScript frontend. Tokens are stored AES-encrypted in a local SQLite database, locked behind a master password with en- and decryption.
 
 **Platform:** Windows 11 only.
 
