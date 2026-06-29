@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.svg" alt="botcord" width="100%">
+</p>
+
 # botcord
 
 A local desktop toolkit for managing multiple Discord accounts. Runs entirely on your machine, no servers, no cloud, no middleman.
