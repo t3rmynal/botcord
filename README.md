@@ -4,7 +4,7 @@
 
 # botcord
 
-A desktop automation toolkit for managing multiple Discord accounts. Runs entirely on your machine, no servers, no cloud, no middleman.
+A desktop automation toolkit for managing Discord accounts. Runs entirely on your machine, no servers, no cloud, no middleman.
 
 Built with [Tauri](https://tauri.app) (Rust backend) and a React + TypeScript frontend. Tokens are stored AES-encrypted in a local SQLite database, locked behind a master password with en- and decryption.
 
@@ -17,13 +17,14 @@ Built with [Tauri](https://tauri.app) (Rust backend) and a React + TypeScript fr
 - **Account manager** - import tokens, validate them in bulk, view profile info (avatar, display name, Nitro status)
 - **Token checker** - paste a list of tokens and instantly see which are valid
 - **Proxy support** - add HTTP/SOCKS proxies, run health checks, auto-assign to accounts
-- **Voice presence** - join voice channels across multiple accounts at once
-- **DM broadcast** - send a message (text or image) to all friends of selected accounts with configurable rate limiting
-- **Account registration** - register fresh accounts, handles captcha via an embedded Chromium session
-- **Invite and friend tools** - bulk-accept invites, send friend requests across accounts
+- **Server joiner** - join discord servers at selected accounts at once
+- **Voice flooder** - join voice channels across multiple accounts at once
+- **DM flooder** - send a message (text or image) to all DMs of selected accounts with configurable rate limiting
+- **Account registration** - register accounts, handles captcha via an embedded Chromium session (in the future will be added API for captcha solver)
+- **Friend requests flooder** - bulk-send friend request to username
 - **Profile editing** - change username, avatar, or other profile fields on selected accounts
-- **Isolated browser sessions** - each account gets its own Chromium profile for login flows
-- **Encrypted vault** - all tokens are AES-GCM encrypted at rest
+- **Nitro Checker** - checks if selected tokens have nitro subscription
+- **Isolated browser sessions** - each account gets its own Chromium profile (autologin)
 
 ---
 
