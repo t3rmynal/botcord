@@ -90,7 +90,7 @@ export function Inbox() {
                   <input
                     value={domain}
                     onChange={(e) => setDomain(e.target.value)}
-                    placeholder="t3rmynal.xyz"
+                    placeholder="example.com"
                     className="h-9 px-3 bg-bg-2 border border-line-2 outline-none focus:border-ink text-[12px] font-mono"
                   />
                 </label>
